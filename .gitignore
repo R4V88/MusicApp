@@ -1,0 +1,5 @@
+node_modules
+dist
+.history
+.eslintrc.json
+package-lock.json
