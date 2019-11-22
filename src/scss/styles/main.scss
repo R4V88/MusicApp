@@ -18,20 +18,3 @@ html {
 
 
 // Your styles goes here:
-//szybkie style do usunięcia:
-body {
-  margin:0 auto;
-  height: 100vh;
-  width:600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.helloBtn {
-  @include buttonBorderBlue;
-  max-width: 100px;
-  position: relative;
-  z-index: 50;
-  top: -90px;
-  left: 280px;
-}

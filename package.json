@@ -1,7 +1,7 @@
 {
   "name": "template_gulp_sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "`npm init`",
   "main": "index.js",
   "scripts": {
     "predeploy": "gulp build",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/R4V88/MusicApp.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rafał Sochacki",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/R4V88/MusicApp/issues"
@@ -31,6 +31,7 @@
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
