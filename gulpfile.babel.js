@@ -30,22 +30,6 @@ gulp.task("html", function () {
     .pipe(gulp.dest("./dist/"));
 });
 
-// gulp.task("js", function() {
-//   return gulp.src('src/js')
-//   .pipe(
-//     plumber({
-//       errorHandler: function(err) {
-//         notify.onError({
-//           title: `Gulp error in ${err.plugin}`,
-//           message: err.toString()
-//         })(err);
-//       }
-//     })
-//   )
-//   .pipe(webpack(require('./webpack.config.js')))
-//   .pipe(gulp.dest('dist/js'));
-// });
-
 gulp.task("js", function () {
   return gulp.src(['src/js/main.js',
     'src/js/nav.js',
