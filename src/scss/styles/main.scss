@@ -10,7 +10,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -20,13 +22,14 @@ html {
 // Your styles goes here:
 //szybkie style do usunięcia:
 body {
-  margin:0 auto;
+  margin: 0 auto;
   height: 100vh;
-  width:600px;
+  width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .helloBtn {
   @include buttonBorderBlue;
   max-width: 100px;
@@ -34,4 +37,24 @@ body {
   z-index: 50;
   top: -90px;
   left: 280px;
+}
+
+#search-area {
+  border-radius: 15px;
+  border: 2px solid white;
+  height: 50px;
+  width: 300px;
+  padding-left: 10px;
+  margin-right: 15px;
+  background-color: #187885;
+  color: white;
+}
+
+.search {
+  border-radius: 15px;
+  height: 50px;
+  width: 200px;
+  background: rgb(34, 194, 195);
+  background: linear-gradient(308deg, rgba(34, 194, 195, 1) 5%, rgba(45, 253, 62, 1) 100%);
+  color: white;
 }
