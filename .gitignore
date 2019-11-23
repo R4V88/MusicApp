@@ -3,3 +3,4 @@ dist
 .history
 .eslintrc.json
 package-lock.json
+.vscode
