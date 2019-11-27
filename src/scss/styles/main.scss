@@ -51,7 +51,7 @@ body {
   height: 50px;
   width: 300px;
   padding-left: 10px;
-  margin-right: 15px;
+  margin: 0 10px;
   background-color: #187885;
   color: white;
 }
@@ -63,5 +63,16 @@ body {
   background: rgb(34, 194, 195);
   background: linear-gradient(308deg, rgba(34, 194, 195, 1) 5%, rgba(45, 253, 62, 1) 100%);
   color: white;
-  margin: 0 5px;
+  margin: 0 10px;
+}
+
+select#search-value {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #187885;
+  text-align: center;
+
 }
