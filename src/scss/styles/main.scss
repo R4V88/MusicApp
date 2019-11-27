@@ -39,6 +39,12 @@ body {
   left: 280px;
 }
 
+#search-bar {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
 #search-area {
   border-radius: 15px;
   border: 2px solid white;
@@ -57,4 +63,5 @@ body {
   background: rgb(34, 194, 195);
   background: linear-gradient(308deg, rgba(34, 194, 195, 1) 5%, rgba(45, 253, 62, 1) 100%);
   color: white;
+  margin: 0 5px;
 }
