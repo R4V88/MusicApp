@@ -9,10 +9,26 @@
 .footerGrid {
   display: grid;
   grid-template-areas:
+    ". topSection ."
     ". midSection ."
     "bottomSection bottomSection bottomSection";
   grid-row-gap: 5px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.footerTopSection{
+  grid-area: topSection;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerTopSectionLogo{
+  padding: 10px;
+  max-height: 100%;
+  @include footerLogo;
+  transition: transform 0.3s ease-in-out;
+  &:hover{
+    transform: translateY(-10px);
+  }
 }
 
 .footerMidSection {
@@ -23,7 +39,7 @@
   justify-content: space-between;
 }
 
-.footerPicture {
+.footerLogo {
   @include footerLogo;
   transition: transform 0.3s ease-in-out;
   &:hover {
