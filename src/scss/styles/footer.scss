@@ -11,9 +11,10 @@
   grid-template-areas:
     ". midSection ."
     "bottomSection bottomSection bottomSection";
-  grid-row-gap: 50px;
-  grid-template-rows: 50% 50%;
+  grid-row-gap: 5px;
+  grid-template-rows: 1fr 1fr;
 }
+
 .footerMidSection {
   grid-area: midSection;
   width: 100%;
@@ -21,18 +22,20 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .footerPicture {
-  // max-width: 50px;
-  // width: 100%;
-  // max-height: 50px;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+  @include footerLogo;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.15);
+  }
 }
+
 .footerBottomSection {
   grid-area: bottomSection;
   width: 100%;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  color: $footerText;
 }

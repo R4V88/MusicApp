@@ -1,8 +1,14 @@
 @import "../variables/variables";
 
-@mixin buttonBorderBlue{
-    background: $favGrey;
-    border-radius: 10px;
-    border: 1px solid $favPink;
-    text-transform: uppercase;
+@mixin buttonBorderBlue {
+  background: $favGrey;
+  border-radius: 10px;
+  border: 1px solid $favPink;
+  text-transform: uppercase;
+}
+
+//Footer
+@mixin footerLogo {
+  -webkit-filter: invert(0.75);
+  filter: invert(0.75);
 }
