@@ -29,14 +29,13 @@ gulp.task("html", function () {
     .pipe(plumber(errorHandler))
     .pipe(gulp.dest("./dist/"));
 });
-
 gulp.task("js", function () {
   return gulp.src(['src/js/main.js',
     'src/js/nav.js',
     'src/js/footer.js'])
     .pipe(
       plumber({
-        errorHandler: function (err) {
+        errorHandler: function(err) {
           notify.onError({
             title: `Gulp error in ${err.plugin}`,
             message: err.toString()
@@ -47,13 +46,12 @@ gulp.task("js", function () {
     .pipe(webpack(require('./webpack.config.js')))
     .pipe(gulp.dest('dist/js'));
 });
-
 gulp.task("sass", () => {
   return gulp
     .src("./src/scss/styles/main.scss")
     .pipe(
       plumber({
-        errorHandler: function (err) {
+        errorHandler: function(err) {
           notify.onError({
             title: `Gulp error in ${err.plugin}`,
             message: err.toString()

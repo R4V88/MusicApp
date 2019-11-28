@@ -1,6 +1,6 @@
 'use strict';
 
-const footerTopSectionLogoBtn = document.querySelector('.footerTopSectionLogo--js');
-const scrollFunction = () => {
+const footerTopSectionLogoBtn = document.querySelector('.footerTopSectionLogoJs');
+const scrollUp = () => {
     document.documentElement.scrollTop = 0;
 }
