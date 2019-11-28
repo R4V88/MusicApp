@@ -33,7 +33,8 @@ gulp.task("html", function() {
 gulp.task("js", function () {
   return gulp.src(['src/js/main.js',
     'src/js/nav.js',
-    'src/js/footer.js'])
+    'src/js/footer.js',
+    'src/js/search.js'])
     .pipe(
       plumber({
         errorHandler: function (err) {
