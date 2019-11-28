@@ -30,7 +30,7 @@
   @include footerLogo;
   transition: transform 0.3s ease-in-out;
   &:hover{
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 }
 .footerMidSection {
@@ -52,7 +52,6 @@
     transform: scale(1.15);
   }
 }
-
 .footerBottomSection {
   grid-area: bottomSection;
   width: 100%;
@@ -60,4 +59,7 @@
   align-items: center;
   justify-content: center;
   color: $footerText;
+}
+.footerParagraph{
+  font-size: 12px;
 }
