@@ -37,6 +37,11 @@
   align-items: center;
   justify-content: center;
 }
+.footerLink{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 .footerLogo {
   @include footerLogo;
   transition: transform 0.3s ease-in-out;
