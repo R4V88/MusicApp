@@ -4,17 +4,15 @@
 @import "nav";
 @import "footer";
 
-
-
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
+// Your styles goes here:
 //do usuniecia jak juz powstanie jakies body :)
 .main {
   height: 500px;
 }
-// Your styles goes here:
+
