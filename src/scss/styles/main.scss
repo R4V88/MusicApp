@@ -23,14 +23,14 @@ body {
   align-items: center;
 }
 
-.helloBtn {
-  @include buttonBorderBlue;
-  max-width: 100px;
-  position: relative;
-  z-index: 50;
-  top: -90px;
-  left: 280px;
-}
+// .helloBtn {
+//   @include buttonBorderBlue;
+//   max-width: 100px;
+//   position: relative;
+//   z-index: 50;
+//   top: -90px;
+//   left: 280px;
+// }
 
 #search-bar {
   display: flex;
