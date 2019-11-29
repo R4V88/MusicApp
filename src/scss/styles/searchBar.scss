@@ -1,6 +1,12 @@
 @import "../variables/variables";
 @import "../mixins/mixins";
 
+body {
+    background-color: #3e32a8;
+    color: white;
+    font-weight: bold;
+}
+
 #search-bar {
     display: flex;
     justify-content: center;
@@ -9,29 +15,32 @@
 
 #search-area {
     border-radius: 15px;
-    border: 1px solid $textColor;
+    border: 3px solid white;
     height: 50px;
     width: 300px;
     padding-left: 10px;
     margin: 0 10px;
-    background-color: $inputSearchColor;
-    color: $textColor;
+    opacity: 0.9;
+    background-color: #3e32a8;
+    color: white;
+    font-weight: bold;
 }
 
 #search-area:focus {
-    background-color: rgb(45, 122, 253);
-    color: #ddd
+    background-color: #3432a8;
+    font-weight: bold;
 }
 
 .search {
     border-radius: 15px;
     height: 50px;
     width: 200px;
-    background: linear-gradient(108deg, rgba(34, 194, 195, 1) 5%, rgba(45, 122, 253, 1) 100%);
-    color: $textColor;
+    background: linear-gradient(108deg, rgba(34, 181, 195, 0.9948179955575981) 4%, rgba(147, 253, 45, 1) 100%);
+    font-weight: bold;
     margin: 0 10px;
     box-shadow: 11px 11px 7px -6px rgba(0, 0, 0, 0.42);
-    border: 1px solid $textColor;
+    border: 1px solid #000080;
+    color: white;
 }
 
 select#search-value {
@@ -40,13 +49,13 @@ select#search-value {
     box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-color: $inputSearchColor;
     text-align: center;
     box-shadow: 11px 11px 7px -6px rgba(0, 0, 0, 0.42);
     border: 1px solid #000080;
+    color: white;
 }
 
 .search:hover {
-    background: linear-gradient(108deg, rgba(34, 194, 195, 1) 5%, rgba(45, 60, 253, 1) 100%);
+    background: linear-gradient(357deg, rgba(34, 195, 174, 0.9948179955575981) 4%, rgba(147, 253, 45, 1) 100%);
     cursor: pointer;
 }
