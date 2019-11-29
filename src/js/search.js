@@ -7,9 +7,8 @@ let query;
 const search = (e) => {
     e.preventDefault()
     query = select.options[select.selectedIndex].value
-    const task = input.value;
-    console.log(task)
-    axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${query}:"${task}"`, {
+    const searchValue = input.value;
+    axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${query}:"${searchValue}"`, {
             headers: {
                 'Content-Type': 'application/json',
                 'X-Content-Type-Options': 'nosniff'
