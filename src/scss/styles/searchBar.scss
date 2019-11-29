@@ -2,7 +2,6 @@
 @import "../mixins/mixins";
 
 body {
-    background-color: #3e32a8;
     color: white;
     font-weight: bold;
 }
@@ -11,6 +10,9 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
+    padding-top: 100px;
+    height: 300px;
+    background-color: #3B125D;
 }
 
 #search-area {
@@ -21,13 +23,13 @@ body {
     padding-left: 10px;
     margin: 0 10px;
     opacity: 0.9;
-    background-color: #3e32a8;
+    background-color: #3B125D;
     color: white;
     font-weight: bold;
 }
 
 #search-area:focus {
-    background-color: #3432a8;
+    background-color: #4C236E;
     font-weight: bold;
 }
 
