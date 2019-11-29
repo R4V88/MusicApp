@@ -1,7 +1,7 @@
 {
   "name": "template_gulp_sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "`npm init`",
   "main": "index.js",
   "scripts": {
     "predeploy": "gulp build",
@@ -12,7 +12,11 @@
     "url": "git+https://github.com/R4V88/MusicApp.git"
   },
   "keywords": [],
-  "author": "",
+  "author": [
+    "Rafał Sochacki",
+    "Sabina Sadowska",
+    "Bartek Łapka"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/R4V88/MusicApp/issues"

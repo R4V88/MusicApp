@@ -15,9 +15,6 @@ const search = (e) => {
             }
         })
         .then((data) => {
-            const li = document.createElement('li');
-            li.innerHTML = data
-            ul.appendChild(li)
             console.log(data)
         })
         .catch((error) => {

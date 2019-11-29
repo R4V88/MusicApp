@@ -1,3 +1,6 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
 #search-bar {
     display: flex;
     justify-content: center;
@@ -11,7 +14,7 @@
     width: 300px;
     padding-left: 10px;
     margin: 0 10px;
-    background-color: #187885;
+    background-color: $inputSearchColor;
     color: white;
 }
 
@@ -31,7 +34,7 @@ select#search-value {
     box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-color: #187885;
+    background-color: $inputSearchColor;
     text-align: center;
 
 }
