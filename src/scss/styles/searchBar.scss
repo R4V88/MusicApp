@@ -9,23 +9,29 @@
 
 #search-area {
     border-radius: 15px;
-    border: 2px solid white;
+    border: 1px solid $textColor;
     height: 50px;
     width: 300px;
     padding-left: 10px;
     margin: 0 10px;
     background-color: $inputSearchColor;
-    color: white;
+    color: $textColor;
+}
+
+#search-area:focus {
+    background-color: rgb(45, 122, 253);
+    color: #ddd
 }
 
 .search {
     border-radius: 15px;
     height: 50px;
     width: 200px;
-    background: rgb(34, 194, 195);
-    background: linear-gradient(308deg, rgba(34, 194, 195, 1) 5%, rgba(45, 253, 62, 1) 100%);
-    color: white;
+    background: linear-gradient(108deg, rgba(34, 194, 195, 1) 5%, rgba(45, 122, 253, 1) 100%);
+    color: $textColor;
     margin: 0 10px;
+    box-shadow: 11px 11px 7px -6px rgba(0, 0, 0, 0.42);
+    border: 1px solid $textColor;
 }
 
 select#search-value {
@@ -36,5 +42,11 @@ select#search-value {
     -moz-appearance: none;
     background-color: $inputSearchColor;
     text-align: center;
+    box-shadow: 11px 11px 7px -6px rgba(0, 0, 0, 0.42);
+    border: 1px solid #000080;
+}
 
+.search:hover {
+    background: linear-gradient(108deg, rgba(34, 194, 195, 1) 5%, rgba(45, 60, 253, 1) 100%);
+    cursor: pointer;
 }
