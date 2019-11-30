@@ -12,7 +12,11 @@
     "url": "git+https://github.com/R4V88/MusicApp.git"
   },
   "keywords": [],
-  "author": ["Rafał Sochacki", "Sabina Sadowska", "Bartek Łapka"],
+  "author": [
+    "Rafał Sochacki",
+    "Sabina Sadowska",
+    "Bartek Łapka"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/R4V88/MusicApp/issues"
