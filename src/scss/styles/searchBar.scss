@@ -40,7 +40,6 @@ body {
     background: linear-gradient(108deg, rgba(34, 181, 195, 0.9948179955575981) 4%, rgba(147, 253, 45, 1) 100%);
     font-weight: bold;
     margin: 0 10px;
-    box-shadow: 11px 11px 7px -6px rgba(0, 0, 0, 0.42);
     border: 1px solid #000080;
     color: white;
 }
@@ -52,9 +51,9 @@ select#search-value {
     -webkit-appearance: none;
     -moz-appearance: none;
     text-align: center;
-    box-shadow: 11px 11px 7px -6px rgba(0, 0, 0, 0.42);
     border: 1px solid #000080;
     color: white;
+    background-color: #4C236E;
 }
 
 .search:hover {
