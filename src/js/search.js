@@ -16,6 +16,25 @@ const search = (e) => {
         })
         .then((data) => {
             console.log(data)
+            function createResultsArtist() {
+
+                let myObj = {
+                    artist: data.data.data[i].artist.name,
+                    artist: data.data.data[i].picture_small,
+                    title: data.data.data[i].title,
+                    music: data.data.data[i].previev
+                }
+                var i;
+                for (i=0; i<data.length;i++){
+                console.log(data.data.data[i].artist.name);
+                console.log(data.data.data[i].picture_small);
+                console.log(data.data.data[i].previev);
+                console.log(data.data.data[i].title);
+    
+                console.log(data)
+
+            
+                 }} ;
         })
         .catch((error) => {
             console.log(error);
