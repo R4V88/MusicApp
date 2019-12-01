@@ -60,3 +60,17 @@ select#search-value {
     background: linear-gradient(357deg, rgba(34, 195, 174, 0.9948179955575981) 4%, rgba(147, 253, 45, 1) 100%);
     cursor: pointer;
 }
+
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.card {
+    background-color: #0d0df1;
+    display: flex;
+    flex-direction: row;
+}
+

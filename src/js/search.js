@@ -21,12 +21,13 @@ const search = (e) => {
             document.getElementById("root").innerHTML="";
             for (i=0; i<x.data.data.length;i++){
                 console.log(x.data.data[i].artist.name);
-                console.log(x.data.data[i].picture_small);
+                console.log(x.data.data[i].artist.picture_small);
                 console.log(x.data.data[i].preview);
                 console.log(x.data.data[i].title);
                 function y(i){
                 var div = document.createElement('div');
-                div.innerHTML = `<div><p>${x.data.data[i].artist.name}</p><audio controls><source src="${x.data.data[i].preview}"></audio></div>`;
+                div.id = "card"
+                div.innerHTML = `<div id="photo_wrapper"><img src="${x.data.data[i].artist.picture_medium}" alt="Artist photo"></div><div id="info_wrapper"><p>${x.data.data[i].artist.name}</p><p>${x.data.data[i].title}</p><p>Album:${x.data.data[i].album.title}</p><audio controls><source src="${x.data.data[i].preview}"></audio></div>`;
                 document.getElementById("root").appendChild(div)
                 }
                 y(i)
