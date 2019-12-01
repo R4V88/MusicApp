@@ -2,7 +2,7 @@
 @import "../mixins/mixins";
 
 body {
-    color: rgb(27, 26, 26);
+    color: rgb(255, 245, 245);
     font-weight: bold;
 }
 
@@ -62,17 +62,48 @@ select#search-value {
 }
 
 
-.root {
+#root {
     display: flex;
     flex-direction: column;
     justify-items: center;
+    background-color: rgb(255, 255, 255);
 }
 
-.card {
-    background-color: #0d0df1;
+#card {
+    width: 80vw;
+    margin: 40px;
+    padding: 20px;
+    align-self: center;
+    background:  $backgroundGradient;
     display: flex;
     flex-direction: row;
-    border: 1px solid  #8bd724;
-    border-radius: 5px;
+    justify-content: safe;;
+    border: 2px solid   $borderColor ;
+    border-radius: 15px;
 }
 
+#photo_wrapper{
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+}
+
+#photo {
+    border-radius: 15px;
+    align-items: center;
+    
+}
+
+#info_wrapper{
+    align-self: center;
+    padding: 20px;
+}
+
+#artist_name {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#title{
+    font-size: 20;
+}

@@ -13,6 +13,7 @@
   /*NAV*/
   
   nav {
+    position: ;;
     border-bottom: #8bd724 solid 2px;
     height: 100px;
     background: linear-gradient(to right, #2457d7, #3b125d);
@@ -130,7 +131,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      z-index: 999;
+      z-index: 99999;
       width: 100%;
       height: 400px;
       justify-content: space-evenly;
@@ -144,6 +145,7 @@
   
     #nav_wrapper {
       align-self: auto;
+      z-index: 99999;
     }
   }
   
