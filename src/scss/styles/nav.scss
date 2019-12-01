@@ -1,3 +1,149 @@
 @import "../variables/variables";
 @import "../mixins/mixins";
 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*NAV*/
+  
+  nav {
+    border-bottom: #8bd724 solid 2px;
+    height: 100px;
+    background: linear-gradient(to right, #2457d7, #3b125d);
+    display: flex;
+  }
+  
+  #nav_wrapper {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to right, #2457d7, #3b125d);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    align-self: center;
+  }
+  
+  #logo_wrapper {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 18px;
+  }
+  
+  li > a {
+    margin: 0 40px;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  #ul_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row;
+    width: 100%;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+  
+    &:hover {
+      color: #8bd724;
+    }
+  }
+  
+  /*TOGGLE ICON*/
+  
+  .ion-md-menu {
+    z-index: 999;
+  }
+  
+  .menu_js {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .toggle_js {
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 170%;
+    color: #fff;
+  }
+  
+  /*
+  .expanded {
+      display: none;
+      flex-direction: column;
+      align-items;
+      z-index: 999;
+      width:100%;
+      height: 400px;
+      
+      }	
+  */
+  
+  @media (max-width: 841px) {
+    #ul_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100vw;
+    }
+  
+    .menu_js {
+      display: none;
+    }
+  
+    .toggle_js {
+      display: flex;
+      align-self: flex-end;
+      width: 80px;
+      padding: 30px;
+      margin: 0;
+  
+      &:hover {
+        color: #8bd724;
+      }
+    }
+  
+    .expanded {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 999;
+      width: 100%;
+      height: 400px;
+      justify-content: space-evenly;
+      margin-right: 40px;
+    }
+  
+    .logo_wrapper {
+      display: none;
+      height: 10px;
+    }
+  
+    #nav_wrapper {
+      align-self: auto;
+    }
+  }
+  
