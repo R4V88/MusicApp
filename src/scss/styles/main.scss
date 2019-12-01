@@ -3,18 +3,15 @@
 @import "../mixins/mixins";
 @import "nav";
 @import "footer";
-
+@import "searchBar";
 
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-
-
-
-
-// Your styles goes here:
