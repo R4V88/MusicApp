@@ -18,15 +18,15 @@ const search = (e) => {
         .then((data) => {
             console.log(data);
             let x = data;
-            
+            document.getElementById("root").innerHTML="";
             for (i=0; i<x.data.data.length;i++){
                 console.log(x.data.data[i].artist.name);
                 console.log(x.data.data[i].picture_small);
-                console.log(x.data.data[i].previev);
+                console.log(x.data.data[i].preview);
                 console.log(x.data.data[i].title);
                 function y(i){
                 var div = document.createElement('div');
-                div.innerHTML = `<div><p>${x.data.data[i].artist.name}</p></div>`;
+                div.innerHTML = `<div><p>${x.data.data[i].artist.name}</p><audio controls><source src="${x.data.data[i].preview}"></audio></div>`;
                 document.getElementById("root").appendChild(div)
                 }
                 y(i)
