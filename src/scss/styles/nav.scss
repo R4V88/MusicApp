@@ -13,9 +13,12 @@
   /*NAV*/
   
   nav {
-    position: ;;
     border-bottom: #8bd724 solid 2px;
     height: 100px;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
     background: linear-gradient(to right, #2457d7, #3b125d);
     display: flex;
   }

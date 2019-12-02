@@ -13,6 +13,7 @@ body {
     padding-top: 100px;
     height: 300px;
     background-color: $searchColor;
+    margin-top: 100px;
 }
 
 #search-area {
@@ -21,7 +22,7 @@ body {
     height: 50px;
     width: 300px;
     padding-left: 10px;
-    margin: 0 10px;
+    margin: 0px 10px;
     opacity: 0.9;
     background-color: $searchColor;
     color: white;
