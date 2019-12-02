@@ -20,14 +20,13 @@ const search = (e) => {
             let x = data;
             document.getElementById("root").innerHTML="";
             for (i=0; i<x.data.data.length;i++){
-                console.log(x.data.data[i].artist.name);
-                console.log(x.data.data[i].artist.picture_small);
-                console.log(x.data.data[i].preview);
-                console.log(x.data.data[i].title);
                 function y(i){
                 var div = document.createElement('div');
                 div.id = "card"
-                div.innerHTML = `<div id="photo_wrapper"><img id="photo" src="${x.data.data[i].artist.picture_medium}" alt="Artist photo"></div><div id="info_wrapper"><p id="artist_name">${x.data.data[i].artist.name}</p><p id="title">${x.data.data[i].title}</p><p id="album">Album: ${x.data.data[i].album.title}</p><audio controls><source src="${x.data.data[i].preview}"></audio></div>`;
+                if(x.data.data[i].artist.picture_medium === "https://cdns-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg" || x.data.data[i].artist.picture_medium ==="https://e-cdns-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg"){
+                div.innerHTML = `<div id="photo_wrapper"><img id="photo" src="${x.data.data[i].album.cover_medium}" alt="Cover photo"></div><div id="info_wrapper"><p id="artist_name">${x.data.data[i].artist.name}</p><p id="title">${x.data.data[i].title}</p><p id="album">Album: ${x.data.data[i].album.title}</p><audio controls><source src="${x.data.data[i].preview}"></audio></div>`;} 
+                else {
+                div.innerHTML = `<div id="photo_wrapper"><img id="photo" src="${x.data.data[i].artist.picture_medium}" alt="Artist photo"></div><div id="info_wrapper"><p id="artist_name">${x.data.data[i].artist.name}</p><p id="title">${x.data.data[i].title}</p><p id="album">Album: ${x.data.data[i].album.title}</p><audio controls><source src="${x.data.data[i].preview}"></audio></div>`;}
                 document.getElementById("root").appendChild(div)
                 }
                 y(i)
@@ -38,27 +37,6 @@ const search = (e) => {
             console.log(error);
         })
 }
-
-
-
-function createResultsArtist() {
-    let myObj = {
-        artist: data.data.data[i].artist.name,
-        artist: data.data.data[i].picture_small,
-        title: data.data.data[i].title,
-        music: data.data.data[i].previev
-    }
-    var i;
-    for (i=0; i<data.length;i++){
-    console.log(getDataFromApi.data.data[i].artist.name);
-    console.log(data.data.data[i].picture_small);
-    console.log(data.data.data[i].previev);
-    console.log(data.data.data[i].title);
-    console.log(myObj.artist);
-
-
-
-     }};
 
 
 searchButton.addEventListener('click', search)
