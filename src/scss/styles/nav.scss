@@ -21,6 +21,7 @@
     position: fixed;
     background: linear-gradient(to right, #2457d7, #3b125d);
     display: flex;
+    z-index: 99999999;
   }
   
   #nav_wrapper {
@@ -46,6 +47,9 @@
   
   li > a {
     margin: 0 40px;
+    letter-spacing: 2px;
+    color: rgba(245, 245, 244, 0.884);
+
   }
   
   ul {

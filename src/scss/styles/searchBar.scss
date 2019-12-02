@@ -78,9 +78,16 @@ select#search-value {
     background:  $backgroundGradient;
     display: flex;
     flex-direction: row;
-    justify-content: safe;;
+    justify-content: safe;
     border: 2px solid   $borderColor ;
     border-radius: 15px;
+}
+
+#card {
+    p {
+        padding: 5px;
+        letter-spacing: 2px;
+    }
 }
 
 #photo_wrapper{
@@ -91,20 +98,83 @@ select#search-value {
 
 #photo {
     border-radius: 15px;
-    align-items: center;
+    align-self: center;
+    height: 250px;
+    width: 250px;
+    opacity: 0.8;
     
 }
 
 #info_wrapper{
     align-self: center;
-    padding: 20px;
+    justify-content: center;;
 }
 
 #artist_name {
+    color: rgba(229, 247, 217, 0.822);
     font-size: 30px;
     text-transform: uppercase;
 }
 
 #title{
-    font-size: 20;
+    color: rgba(136, 235, 55, 0.719);
+    font-size: 25;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#album {
+    text-transform: capitalize;
+    font-weight: 300;
+    color: rgba(247, 233, 245, 0.733);
+
+}
+
+@media (max-width: 841px) {
+    audio {
+        width: 200px;
+    }
+
+
+    #photo {
+        border-radius: 15px;
+        align-self: center;
+        height: 230px;
+        width: 230px;
+        
+    }
+}
+
+@media (max-width: 670px) {
+    #card {
+        flex-direction: column;
+        justify-content: left;
+        align-self: stretch;;
+    }
+
+    #info_wrapper{
+        align-self: inherit;;
+        justify-content: left;;
+    }
+
+    audio {
+        width: 190px;
+    }
+
+    #photo {
+        height: 200px;
+        width: 200px;
+        
+    }
+    #artist_name {
+        font-size: 20px;
+    }
+    
+    #title {
+        font-size: 15;     
+    }
+
+    #album {
+    font-size: 13px;
+    }
 }

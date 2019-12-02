@@ -27,7 +27,7 @@ const search = (e) => {
                 function y(i){
                 var div = document.createElement('div');
                 div.id = "card"
-                div.innerHTML = `<div id="photo_wrapper"><img id="photo" src="${x.data.data[i].artist.picture_medium}" alt="Artist photo"></div><div id="info_wrapper"><p id="artist_name">${x.data.data[i].artist.name}</p><p id="title">${x.data.data[i].title}</p><p>Album: ${x.data.data[i].album.title}</p><audio controls><source src="${x.data.data[i].preview}"></audio></div>`;
+                div.innerHTML = `<div id="photo_wrapper"><img id="photo" src="${x.data.data[i].artist.picture_medium}" alt="Artist photo"></div><div id="info_wrapper"><p id="artist_name">${x.data.data[i].artist.name}</p><p id="title">${x.data.data[i].title}</p><p id="album">Album: ${x.data.data[i].album.title}</p><audio controls><source src="${x.data.data[i].preview}"></audio></div>`;
                 document.getElementById("root").appendChild(div)
                 }
                 y(i)
