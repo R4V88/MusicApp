@@ -1,2 +1,75 @@
 @import "../variables/variables";
 @import "../mixins/mixins";
+
+.footer {
+  background: $backgroundGradient;
+  height: 300px;
+  width: 100%;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-areas:
+    ". topSection ."
+    ". midSection ."
+    "bottomSection bottomSection bottomSection";
+  grid-row-gap: 5px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footerTopSection {
+  grid-area: topSection;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerTopSectionLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-height: 60px;
+  @include footerLogoColorInverter;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-15px);
+  }
+}
+
+.footerMidSection {
+  grid-area: midSection;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLogo {
+  @include footerLogoColorInverter;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+.footerBottomSection {
+  grid-area: bottomSection;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $footerText;
+}
+
+.footerParagraph {
+  font-size: 12px;
+}
